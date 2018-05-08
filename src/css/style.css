@@ -18,12 +18,7 @@
   }
 
   .formLogin {
-    padding: 5px;
-    width: 200px;
-    background: white;
-    height: 140px;
-    float: right;
-    position: fixed;
+    position: fixed !important;
     top: 50px;
     right: 10px;
   }
