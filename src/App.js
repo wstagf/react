@@ -4,10 +4,12 @@ import './App.css';
 import './css/scrolling-nav.css';
 import './css/style.css';
 
-import { Jumbotron, Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid, Row, Col, footer, FormControl, FormGroup, ControlLabel,
+import {  Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid,
+       Row, Col, footer, FormControl, FormGroup, ControlLabel,
         HelpBlock, Overlay, Tooltip  } from 'react-bootstrap';
 
 import ComponentLogin from './ComponentLogin';
+import ComponentMenuPrincipal from './ComponentMenuPrincipal';
 
 class App extends Component {
 
@@ -17,40 +19,27 @@ class App extends Component {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  />
       <div id="" >
-      
+
         <Navbar fixedTop>
             <Navbar.Header>
               <Navbar.Brand>
                 <a href="#home">React Ipsum</a>
               </Navbar.Brand>
             </Navbar.Header>
-            <Nav>
-              <NavItem eventKey={1} href="#oquee">
-                O que é
-              </NavItem>
-              <NavItem eventKey={2} href="#deondevem">
-                De onde vem
-              </NavItem>
-              <NavItem eventKey={3} href="#porqueusamos">
-                Porque usamos
-              </NavItem>
-              <NavItem eventKey={4} href="#ondeconseguilo">
-                Onde consegui-lo
-              </NavItem>
-              
-            </Nav>
+            <ComponentMenuPrincipal/>
             <Nav pullRight>
               <NavItem eventKey={5}>
                 <ComponentLogin />
               </NavItem>
             </Nav>
         </Navbar>
-        
-        
 
+        
+          
         <Grid fluid>
           <Row className="bg-primary section" id="oquee">
             <Col xs={3} md={2}>
+              <ComponentMenuPrincipal/>
             </Col>
             <Col xs={6} md={8}>
               <h2>O que é Lorem Ipsum?</h2>
@@ -86,15 +75,15 @@ class App extends Component {
               </Col>
           </Row>
           <Row className="show-grid section" id="ondeconseguilo">
-            <Col xs={3} md={2}>
+            <Col xs={3} md={4}>
               </Col>
-              <Col xs={6} md={8}>
+              <Col xs={6} md={4}>
                 <h2>Onde posso conseguí-lo?</h2>
                 <p className="lead">
                 Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
                 </p>
               </Col>
-              <Col xs={3} md={2}>
+              <Col xs={3} md={4}>
               </Col>
           </Row>
         </Grid>
