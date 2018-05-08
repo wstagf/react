@@ -5,9 +5,12 @@ import './css/scrolling-nav.css';
 import './css/style.css';
 
 import { Jumbotron, Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid, Row, Col, footer, FormControl, FormGroup, ControlLabel,
-        HelpBlock } from 'react-bootstrap';
+        HelpBlock, Overlay, Tooltip  } from 'react-bootstrap';
+
+import ComponentLogin from './ComponentLogin';
 
 class App extends Component {
+
   render() {
     return (
     <div className="App">
@@ -15,7 +18,7 @@ class App extends Component {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  />
       <div id="" >
       
-        <Navbar >
+        <Navbar fixedTop>
             <Navbar.Header>
               <Navbar.Brand>
                 <a href="#home">React Ipsum</a>
@@ -37,11 +40,12 @@ class App extends Component {
               
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={5} href="#">
-                Login
+              <NavItem eventKey={5}>
+                <ComponentLogin />
               </NavItem>
             </Nav>
         </Navbar>
+        
         
 
         <Grid fluid>
