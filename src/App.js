@@ -4,7 +4,8 @@ import './App.css';
 import './css/scrolling-nav.css';
 import './css/style.css';
 
-import { Jumbotron, Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid, Row, Col, footer } from 'react-bootstrap';
+import { Jumbotron, Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid, Row, Col, footer, FormControl, FormGroup, ControlLabel,
+        HelpBlock } from 'react-bootstrap';
 
 class App extends Component {
   render() {
@@ -12,8 +13,9 @@ class App extends Component {
     <div className="App">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  />
-      <div id="page-top">
-        <Navbar fixedTop>
+      <div id="" >
+      
+        <Navbar >
             <Navbar.Header>
               <Navbar.Brand>
                 <a href="#home">React Ipsum</a>
@@ -26,14 +28,21 @@ class App extends Component {
               <NavItem eventKey={2} href="#deondevem">
                 De onde vem
               </NavItem>
-              <NavItem eventKey={2} href="#porqueusamos">
+              <NavItem eventKey={3} href="#porqueusamos">
                 Porque usamos
               </NavItem>
-              <NavItem eventKey={2} href="#ondeconseguilo">
+              <NavItem eventKey={4} href="#ondeconseguilo">
                 Onde consegui-lo
+              </NavItem>
+              
+            </Nav>
+            <Nav pullRight>
+              <NavItem eventKey={5} href="#">
+                Login
               </NavItem>
             </Nav>
         </Navbar>
+        
 
         <Grid fluid>
           <Row className="bg-primary section" id="oquee">
