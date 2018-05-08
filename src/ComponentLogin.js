@@ -21,7 +21,7 @@ class ComponentLogin extends Component {
       return (
         <div>
             <span href="#" onClick={this.handleClick}>Login</span>
-            <div className="formLogin " style={!this.state.isDisplay ? {} : { display: 'none' }} > 
+            <div className="formLogin " style={!this.state.isDisplay ? { display: 'none' } : {} } > 
                 testes
             </div>
         </div>
