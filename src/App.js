@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './css/scrolling-nav.css';
 import './css/style.css';
 
-import {  Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader, Grid,
-       Row, Col, footer, FormControl, FormGroup, ControlLabel,
-        HelpBlock, Overlay, Tooltip  } from 'react-bootstrap';
+import {  Navbar, Nav, NavItem, Grid,
+       Row, Col } from 'react-bootstrap';
 
 import ComponentLogin from './ComponentLogin';
 import ComponentMenuPrincipal from './ComponentMenuPrincipal';
@@ -34,12 +32,10 @@ class App extends Component {
             </Nav>
         </Navbar>
 
-        
-          
         <Grid fluid>
           <Row className="bg-primary section" id="oquee">
             <Col xs={3} md={2}>
-              <ComponentMenuPrincipal/>
+
             </Col>
             <Col xs={6} md={8}>
               <h2>O que é Lorem Ipsum?</h2>
@@ -88,7 +84,7 @@ class App extends Component {
           </Row>
         </Grid>
         <Navbar fixedBottom className="rodapeCreditos">
-          <p>Criado por Thiago Augusto <a href="http://www.aguiarobo.com" target="_blank">Aguiarobo</a> </p>
+          <p>Criado por Thiago Augusto <a href="http://www.aguiarobo.com" target="_blank" rel="noopener noreferrer">Aguiarobo</a> </p>
         </Navbar>
       </div>
     </div>

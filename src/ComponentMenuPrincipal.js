@@ -1,8 +1,6 @@
 import React from 'react';
 import {  NavItem, Nav } from 'react-bootstrap';
 
-
-
 const listaMenus = [ 
     {ID: 1, label: 'O que é Lorem Ipsum?',  url: 'oquee'},
     {ID: 2, label: 'De onde ele vem?',  url: 'deondevem'}, 
@@ -13,7 +11,7 @@ const ComponentMenuPrincipal = (props) => {
   return (
     <Nav>
       {listaMenus.map(i => {
-        return <NavItem eventKey={i.ID} key={i.ID} eventKey={1} href={"#" + i.url}>
+        return <NavItem eventKey={i.ID} key={i.ID} href={"#" + i.url}>
               {i.label}
             </NavItem>
       })}
